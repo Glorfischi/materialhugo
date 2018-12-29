@@ -1,0 +1,23 @@
+{{ define "main" -}}
+<div class="row">
+{{ range .Data.Pages -}}
+
+
+    <div class="col s12 m6">
+        <div class="card ">
+            <div class="card-content">
+                <span class="card-title">{{ .Title }}</span>
+                <div class="since">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+                <div>
+                {{ .Content }}
+                </div>
+            </div>
+            <div class="card-action">
+                <a href="{{ .Permalink }}">More</a>
+
+            </div>
+        </div>
+    </div>
+{{- end }}
+</div>
+{{- end }}

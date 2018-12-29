@@ -1,0 +1,91 @@
+.main {
+    border-radius: 25px 25px 25px 25px;
+    background: #FFFFFF;
+    padding: 20px;
+    width: 100%;
+    padding-top: 40px;
+    margin-top: 128px;
+    margin-bottom: 40px;
+    min-height: calc(100vh - 128px - 40px);
+}
+
+.greeting {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    width: 100%;
+    min-height: calc(50vh)
+}
+
+.footer {
+    width: 100%;
+    min-height: 40px;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+.cheader {
+    position: fixed;
+    top: 0;
+    padding-top: 20px;
+    min-height: 128px;
+    z-index: -1;
+}
+
+.right {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.row {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.block {
+    width: 100px;
+    display: inline-block;
+    font-size: 16px
+}
+
+.bigblock {
+    width: 64px;
+    display: inline-block;
+    font-size: 40px
+}
+
+.since {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #757575;
+}
+
+.subheader {
+    font-size: 16px;
+    color: #757575;
+}
+
+html {
+    min-height: 100vh;
+    z-index: -1;
+    background: #FFFFFF;
+}
+
+body {
+    min-height: calc(100vh - 128px - 40px);
+    z-index: -1;
+    background: #FFFFFF;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: transform .2s;
+}
+
+a:hover, a:focus {
+    transform: scale(1.1);
+}

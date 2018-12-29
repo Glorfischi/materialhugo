@@ -1,0 +1,9 @@
+<main class="footer {{ .Site.Params.Color.Primary }}">
+  <div class="container row">
+        {{ range .Site.Menus.contact -}}
+        <div class="block"><a href="{{ .URL }}">{{ .Pre }}</a></div>
+        {{- end }}
+  </div>
+</main>
+
+

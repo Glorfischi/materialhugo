@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html class="{{ .Site.Params.Color.Primary }}">
+    {{- partial "head.html" . -}}
+    <body class="{{ .Site.Params.Color.Primary }}">
+        {{- partial "header.html" . -}}
+        <main class="main">
+          <div class="container">
+          {{- block "main" . }}{{- end }}
+          </div>
+        </main>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

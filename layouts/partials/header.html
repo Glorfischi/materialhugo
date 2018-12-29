@@ -1,0 +1,11 @@
+<nav class="nav-extended {{ .Site.Params.Color.Primary }} z-depth-0 cheader" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo center">{{ .Site.Title }}</a>
+    </div>
+    <div class="nav-content container">
+      <ul class="tabs tabs-transparent">
+        {{ range .Site.Menus.main -}}
+        <li class="tab"><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </div>
+</nav>
